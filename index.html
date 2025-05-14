@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Soto - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          John Soto
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/animation/2024/05/16/21/45/21-45-34-3_512.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm John Soto! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a learning to become a full stack developer!
+            I am currently working on HTML and JavaScript to make beautiful sites for people to see. 
+            I am hoping that these skills will guide me towards a career in the field!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="https://media.istockphoto.com/id/1138960572/vector/cloud-computing-icon.jpg?s=612x612&w=0&k=20&c=-9mrz0vlvmFeoN_VfMeA8hR92NpLFOImsXQpy4-1fXw="/>
+            <h6>Cloud Computing</h6>
+            <p>1 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://www.unosquare.com/wp-content/uploads/2022/08/Unosquare_41.jpg"/>
+            <h6>DevOps</h6>
+            <p>1 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"/>
+            <h6>Python</h6>
+            <p>1 years experience</p>
+        </div>
+
+          <div class="skill">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw0S1325JD5bey4bwrswly4rm5zawuaMhTlA&s"/>
+            <h6>Video Editing</h6>
+            <p>2 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Profile Page</h3>
+            <ul>
+              <li>Developed a Profile Page using HTML, CSS, JavaScript and IBM Watson Assistant.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Youtube Videos</h3>
+            <ul>
+              <li>Recorded and developed Youtube Videos for Let's Play channels and Twitch Stream VODs. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Spoons App</h3>
+            <ul>
+              <li>Created an app to help patients with chronic pain and depression record a daily activites tracker.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I am pleased to recommend John Soto for any professional opportunity he may pursue. During his time at our organization,
+          John consistently demonstrated exceptional dedication, problem-solving skills, and a collaborative spirit. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I’ve worked closely with John Soto and found him to be professional, detail-oriented, and dependable. 
+          His proactive mindset and strong communication make him a standout colleague.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John brings a strong work ethic, positive attitude, and excellent problem-solving skills. 
+          He consistently exceeds expectations and contributes meaningfully to team goals. A trusted professional. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation(showPopup(true))">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
